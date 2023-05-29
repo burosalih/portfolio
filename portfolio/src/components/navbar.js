@@ -9,31 +9,25 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-teal-400 to-indigo-500 text-white font-mont h-[50px]">
+    <nav className="bg-gradient-to-r from-teal-400/75 to-indigo-400/75 text-white font-mont h-[50px] fixed w-full top-0 z-50 backdrop-blur-sm">
       <ul className="flex space-x-12 pl-3 pt-3">
         <li className="relative">
           <a href="#" onClick={toggleDropdown}>
-            dropdown
+            about me
           </a>
           {dropdownOpen && (
-            <ul className="animate-dropdown-appear absolute left-2 mt-1 bg-gray-500 border border-teal-400 rounded-2xl shadow-xl">
+            <ul className="animate-dropdown-appear absolute left-2 mt-1 bg-gray-900 border border-teal-400 rounded-2xl shadow-xl">
               <li>
-                <a href="#" className="block px-4 py-2">projects</a>
+                <a href="#" className="block px-4 py-2 hover:outline outline-teal-300 rounded-2xl">projects</a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2">skills</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2">cv</a>
+                <a href="#" className="block px-4 py-2 hover:outline outline-teal-300 rounded-2xl">skills</a>
               </li>
             </ul>
           )}
         </li>
         <li>
           <a href="#">home</a>
-        </li>
-        <li>
-          <a href="#">about</a>
         </li>
         <li>
           <a href="#">contact</a>

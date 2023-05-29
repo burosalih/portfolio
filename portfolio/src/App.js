@@ -10,11 +10,12 @@ function App() {
   return (
     <div>
       <Navbar/>
-        <div className="h-screen bg-gray-500 flex flex-col items-center justify-center">
-            <p className="font-mont font-bold text-white text-3xl py-4 select-none">
-              Buro Salih Front-end Web Developer
-            </p>
-          <Button text="Learn more" onClick={handleClick} />
+        <div className="h-screen bg-gray-900  flex flex-col items-center justify-center">
+            <h1 className="font-mont font-bold text-white text-6xl select-none">
+              Buro Salih
+            </h1>
+            <p className="font-mont font-semibold text-white text-2xl py-4 select-none">Front-End React Developer</p>
+          <Button text="Download CV" onClick={handleClick} />
         </div>
     </div>
   );
